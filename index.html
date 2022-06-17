@@ -1,62 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="ru">
+  <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
-    <title>Макет</title>
-</head>
-<body>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Old+Standard+TT&display=swap&subset=cyrillic" rel="stylesheet">
+    <title>Портфолио Junior верстальщика</title>
+  </head>
 
-<header>
-    <div class="header-container">
-        <div class="header-container__column">
-            <div class="header-container__item menu">
-                <button class="menu__button"></button>
-            </div>
-            <div class="header-container__item logo">
-                <img class="logo__img" src="img/header/logo.svg" alt="Логотип">
-            </div>
-            <div class="header-container__item divider">
-                <div class="divider__img"></div>
-            </div>
-        </div>
-        <div class="header-container__column">
-            <div class="header-container__item repair">
-                <button class="repair__button"></button>
-            </div>
-            <div class="header-container__item checkstatus">
-                <button class="checkstatus__button"></button>
-            </div>
-        </div>
-    </div>
-</header>
+  <body>
+    <header class="page-header">
+	<div class="container">
+      <a class="header-email" href="mailto:enot_neopoznanniy@gmail.com">enot_neopoznanniy@gmail.com</a>
+      <a class="header-phone" href="tel:+79876543210">+7 987 654 32 10</a>
+	 </div>
+    </header>
 
-<main>
-    <div class="container">
-        <div class="nav-container">
-            <div class="title">
-                <h1>Услуги и сервисы</h1>
-            </div>
-            <div class="slide-menu">
-                <div class="slide-menu__button slide-menu__button--active">
-                    <a href="">Ремонтируемые устройства</a>
-                </div>
-                <div class="slide-menu__button">
-                    <a href="">Дополнительные услуги</a>
-                </div>
-            </div>
-        </div>
-        <div class="main-container">
-            <div class="main-container__item about-text">
-                <p>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
-                <span class="about-text__icon"></span><a href="#">Читать далее</a>
-            </div>
-            <div class="main-container__item about-img">
-                <img src="img/main/about.png" alt="About image">
-            </div>
-        </div>
-    </div>
-</main>
-</body>
+    <section class="hero-image">
+	<div class="container">
+      <h1 class="heading">Опознанный Енот</h1>
+      <p>Junior верстальщик</p>
+	 </div>
+    </section>
+
+    <section class="intro">
+	<div class="container">
+      <h2 class="subheading">Давайте познакомимся</h2>
+	  <figure class="user-image"><img src="files/user.jpg" width="928" height="536" alt="Фотография Неопознанного Енота"></figure>
+      <h3>Пара слов о себе</h3>
+      <p>Текст с парой слов о себе.</p>
+      <h3>Чем могу быть полезен</h3>
+      <p>Текст о том, чем могу быть полезен.</p>
+
+	  <div class="skills">
+		<h3>Мои навыки</h3>
+		<dl class="skills-list">
+			<dt class="skill-html">HTML</dt>
+			<dd class="level"><div style="width: 60%;">60%</div></dd>
+			<dt class="skill-css">CSS</dt>
+			<dd class="level"><div style="width: 40%;">40%</div></dd>
+		</dl>
+	  </div>
+	 </div>
+    </section>
+
+    <section class="portfolio">
+	<div class="container">
+      <h2 class="subheading">Мои работы</h2>
+	  <figure class="project-image">
+	    <img src="files/project.jpg" width="928" height="536" alt="Cайт магазина товаров для дома">
+	  </figure>
+      <h3>Магазин товаров для дома</h3>
+      <p>Мой первый сайт.</p>
+	  <p><a class="button" href="source/index.html">Открыть страницу</a></p>
+
+      <h3>Блог начинающего верстальщика</h3>
+      <p>Статический блог про обучение HTML и CSS.</p>
+	 </div>
+    </section>
+
+    <footer class="page-footer">
+	<div class="container">
+      <a class="footer-email" href="mailto:enot_neopoznanniy@gmail.com">enot_neopoznanniy@gmail.com</a>
+      <a class="footer-phone" href="tel:+79876543210">+7 987 654 32 10</a>
+	</div>
+    </footer>
+  </body>
 </html>
