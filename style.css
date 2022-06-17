@@ -1,190 +1,193 @@
-@font-face {
-    font-family: 'TT Lakes';
-    src: local('TT Lakes'), url("./TTLakes/TTLakes-Regular.woff") format('woff');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'TT Lakes';
-    src: local('TT Lakes'), url("./TTLakes/TTLakes-Medium.woff") format('woff');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: 'TT Lakes';
-    src: local('TT Lakes'), url("./TTLakes/TTLakes-Bold.woff") format('woff');
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-}
-
-html {
-    margin: 0;
-    padding: 0;
-    font-size: 14px;
-    font-family: "TT Lakes", sans-serif;
-    color: #1B1C21;
-    box-sizing: border-box;
-}
-
-*, *::before, *::after {
-    box-sizing: inherit;
-}
-
 body {
-    margin: 0;
-    padding: 0;
-}
-
-.header-container {
-    height: 88px;
-    background-color: #FFFFFF;
-    width: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #D9FFF5;
-}
-
-.header-container__column {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex: 1 0 auto;
-    /*border: chartreuse 1px dotted;*/
-}
-
-.header-container__item {
-    /*border: blueviolet 1px dashed;*/
-}
-
-.menu__button {
-    margin: 0;
-    padding: 0;
-    vertical-align: middle;
-    border: 0;
-    background: no-repeat url(img/header/burger.svg);
-    width: 40px;
-    height: 40px;
-}
-
-.logo__img {
-    vertical-align: middle;
-}
-
-.divider__img {
-    vertical-align: middle;
-    background: no-repeat url(img/header/divider.svg);
-    width: 2px;
-    height: 32px;
-}
-
-.repair__button {
-    margin: 0;
-    padding: 0;
-    vertical-align: middle;
-    border: 0;
-    background: no-repeat url(img/header/repair.svg);
-    width: 40px;
-    height: 40px;
-}
-
-.checkstatus__button {
-    margin: 0;
-    padding: 0;
-    vertical-align: middle;
-    border: 0;
-    background: no-repeat url(img/header/checkstatus.svg);
-    width: 40px;
-    height: 40px;
+  margin: 0;
+  min-width: 960px;
+  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 32px;
+  color: #222222;
+  background-color: #f2f4f6;
+  background-image: url("img/hero-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
 }
 
 .container {
-    background: #F8F8F8;
-    min-height: 509px;
-    display: flex;
-    flex-flow: column;
+  max-width: 928px;
+  margin: 0 auto;
+  padding: 0 16px;
 }
 
-h1 {
-    font-size: 28px;
-    margin-block-start: 0;
-    margin-block-end: 0;
-    margin-inline-start: 0;
-    margin-inline-end: 0;
-    font-weight: bold;
-    font-style: normal;
+.page-header {
+  margin: 0 0 160px;
+  padding: 32px 0 32px;
 }
 
-.title {
-    padding: 0 16px;
-    margin: 24px 0;
-    border-left: 4px solid #41F6D7;
+.page-header .container,
+.page-footer .container {
+  max-width: 1408px;
+  text-align: right;
 }
 
-.slide-menu {
-    display: flex;
-    justify-content: space-between;
-    overflow-x: scroll;
-    padding: 0 16px 24px 16px;
+.page-header a {
+  margin-left: 56px;
+  color: #288be6;
+  text-decoration: none;
+  background-repeat: no-repeat;
+  background-position: left;
 }
 
-.slide-menu__button {
-    flex: 1 0 auto;
-    align-items: center;
-    padding: 8px;
-    margin: 0 8px 0 8px;
+.header-email {
+  padding-left: 30px;
+  background-image: url("img/icon-email-header.svg");
 }
 
-.slide-menu__button--active {
-    background: #FFFFFF;
-    border: 2px solid #B8FFEC;
-    border-radius: 6px;
+.header-phone {
+  padding-left: 25px;
+  background-image: url("img/icon-phone-header.svg");
 }
 
-.slide-menu__button a {
-    color: #7E7E82;
-    text-decoration: none;
-    font-size: 16px;
+.hero-image {
+  margin-bottom: 620px;
 }
 
-.about-text__icon {
-    background-image: url(img/main/expand.svg);
-    width: 24px;
-    height: 24px;
-    display: inline-block;
-    vertical-align: bottom;
+.hero-image .container {
+  max-width: 1408px;
+  text-align: center;
 }
 
-.main-container {
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
+.heading {
+  margin: 0 0 16px;
+  font-family: "Old Standard TT", "Times", "Times New Roman", serif;
+  font-size: 88px;
+  line-height: 96px;
+  font-weight: 400;
 }
 
-.main-container__item {
-    margin: 0;
+.hero-image p {
+  margin: 0;
+  font-size: 32px;
+  line-height: 48px;
 }
 
-.about-text {
-    margin: 0 16px 16px 16px;
+.intro {
+  margin: 0 0 120px;
 }
 
-.about-text a {
-    color: #1B1C21;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 500;
+.subheading {
+  margin: 0 0 56px;
+  font-family: "Old Standard TT", "Times", "Times New Roman", serif;
+  font-size: 64px;
+  line-height: 80px;
+  font-weight: 400;
+  text-align: center;
 }
 
-.about-text p {
-    display: block;
-    margin-block-start: 0;
-    margin-block-end: 16px;
+.user-image {
+  margin: 0 0 32px;
+  text-align: center;
 }
 
-.about-img {
+.intro h3,
+.portfolio h3 {
+  margin: 0 0 12px;
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: 500;
+}
+
+.intro p {
+  margin: 0 0 32px;
+}
+
+.skills-list {
+  margin: 0;
+  padding: 0;
+}
+
+.skills-list dt {
+  padding-left: 32px;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.skill-html {
+  background-image: url("img/icon-html.svg");
+}
+
+.skill-css {
+  background-image: url("img/icon-css.svg");
+}
+
+.level {
+  margin: 4px 0 16px;
+  padding: 0;
+  height: 14px;
+  font-size: 0;
+  background-color: #ffffff;
+  border: 1px solid #86c3fa;
+  border-radius: 8px;
+}
+
+.level div {
+  margin: 1px;
+  height: 12px;
+  background-color: #288be6;
+  border-radius: 6px;
+}
+
+.portfolio {
+  margin: 0 0 120px;
+}
+
+.projects {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.projects li {
+  margin: 0 0 80px;
+}
+
+.project-image {
+  margin: 0 0 24px;
+  text-align: center;
+}
+
+.projects p {
+  margin: 0 0 24px;
+}
+
+.button {
+  padding: 6px 20px;
+  display: inline-block;
+  vertical-align: baseline;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 4px;
+  background-color: #288be6;
+  color: #ffffff;
+}
+
+.page-footer {
+  padding: 40px 0;
+  background-color: #00417d;
+}
+
+.page-footer a {
+  margin-left: 56px;
+  color: #ffffff;
+  text-decoration: none;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.footer-email {
+  padding-left: 30px;
+  background-image: url("img/icon-email-footer.svg");
+}
+
+.footer-phone {
+  padding-left: 25px;
+  background-image: url("img/icon-phone-footer.svg");
 }
